@@ -62,6 +62,6 @@ export default function Page({ children }) {
   );
 }
 
-Page.propTypes = {
-  children: PropTypes.string,
-};
+// Page.propTypes = {
+//   children: PropTypes.string,
+// };
