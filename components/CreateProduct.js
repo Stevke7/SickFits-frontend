@@ -5,7 +5,7 @@ export default function CreateProduct() {
   const { inputs, handleChange, clearForm, resetForm } = useForm({
     image: '',
     name: 'NIce shoes',
-    price: 45222,
+    price: 4522,
     description: 'theese are nice shoes',
   });
 
