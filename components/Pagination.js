@@ -6,7 +6,7 @@ import PaginationStyles from './styles/PaginationStyles';
 import DisplayError from './ErrorMessage';
 import { perPage } from '../config';
 
-const PAGINATION_QUERY = gql`
+export const PAGINATION_QUERY = gql`
   query {
     _allProductsMeta {
       count
@@ -14,6 +14,7 @@ const PAGINATION_QUERY = gql`
   }
 `;
 
+// eslint-disable-next-line react/prop-types
 export default function Pagination({ page }) {
   const { error, loading, data } = useQuery(PAGINATION_QUERY);
   if (loading) return 'Loading ....';
